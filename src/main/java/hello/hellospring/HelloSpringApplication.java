@@ -11,6 +11,6 @@ public class HelloSpringApplication {
 	}
 
 
-	// ide commit test
+
 
 }
