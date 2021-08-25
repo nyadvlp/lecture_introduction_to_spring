@@ -10,4 +10,7 @@ public class HelloSpringApplication {
 		SpringApplication.run(HelloSpringApplication.class, args);
 	}
 
+
+	// ide commit test
+
 }
