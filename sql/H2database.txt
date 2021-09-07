@@ -1,0 +1,4 @@
+banyakim@Banyaui-MacBookPro ~ % cd ..
+banyakim@Banyaui-MacBookPro /Users % cd banyakim/Downloads/FILES/program/h2/
+banyakim@Banyaui-MacBookPro h2 % cd bin
+banyakim@Banyaui-MacBookPro bin % ./h2.sh
