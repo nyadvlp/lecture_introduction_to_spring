@@ -22,10 +22,20 @@ public class MemberService {
 
     // 회원 가입
     public long join(Member member) {
-        validateDuplicateMember(member);
-        // 저장
-        memberRepository.save(member);
-        return member.getId();
+
+        // 시간 측정 메소드
+        long start = System.currentTimeMillis();
+
+        try {
+            validateDuplicateMember(member);
+            // 저장
+            memberRepository.save(member);
+            return member.getId();
+        } finally {
+         long finish = System.currentTimeMillis();
+         long timeMs = finish - start;
+         System.out.println("join = " + timeMs);
+        }
     }
 
     // 중복 회원 검증
